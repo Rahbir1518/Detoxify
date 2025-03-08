@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-primary: "Radio Canada Big", "sans-serif";
+    --font-secondary: "League Gothic", "sans-serif";
+}
+
+.font-smoothing{
+   @apply text-[clamp(3rem,5vw+3rem,8rem)] font-extrabold transition-all duration-300 ease-in-out;
+}
