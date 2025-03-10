@@ -11,7 +11,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="bg-loginPrime p-4">
+      <div className="bg-loginPrime p-4 mb-2">
         <button
           className="font-primary text-white font-extrabold text-3xl cursor-pointer hover:underline"
           onClick={handleClick}
@@ -69,7 +69,7 @@ const Login = () => {
         </div>
 
         {/* Image */}
-        <div className="w-1/2 h-screen flex items-center justify-center bg-gray-700">
+        <div className="w-1/2 h-screen flex items-center justify-center bg-white">
           <img
             src={corporateImg}
             alt="Corporate worker"
