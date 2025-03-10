@@ -5,6 +5,9 @@
 @theme{
     --font-primary: "Radio Canada Big", "sans-serif";
     --font-secondary: "League Gothic", "sans-serif";
+    --color-primary: #1e6bb4;
+    --color-secondary: #b0e7e3;
+    --color-loginPrime: #000035;
 }
 
 .font-smoothing{

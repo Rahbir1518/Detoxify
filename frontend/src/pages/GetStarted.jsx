@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const GetStarted = () => {
@@ -12,7 +12,7 @@ const GetStarted = () => {
 
   const fadeInOnly = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 3, ease: 'easeOut' } }
+    visible: { opacity: 1, transition: { delay: 1.75,duration: 2.5, ease: 'easeOut' } }
   };
   
   const fadeInLeftVariant = {
@@ -44,7 +44,7 @@ const GetStarted = () => {
           animate={inView ? 'visible' : 'hidden'}
           className="flex flex-col items-center space-y-6"
         >
-          <h1 className="bg-teal-200 bg-clip-text text-transparent bg-gradient-to-r from-[#82b2df] to-[#b0e7e3] font-smoothing font-primary">
+          <h1 className="bg-teal-200 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-smoothing font-primary">
             Detoxify
           </h1>
           
@@ -58,9 +58,9 @@ const GetStarted = () => {
           variants={fadeInOnly}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="text-white font-secondary text-[clamp(0.5rem,1vw+0.5rem,2rem)] max-w-[25%] bg-[#4892d6] px-6 py-3 
+          className="text-white font-secondary text-[clamp(0.5rem,1vw+0.5rem,2rem)] max-w-[25%] bg-primary px-6 py-3 
             rounded-2xl cursor-pointer shadow-lg transition duration-300 ease-in-out
-            hover:bg-[#82b2df] hover:shadow-2xl hover:shadow-[#82b2df]/50 hover:scale-105
+            hover:bg-[#85aed4] hover:shadow-2xl hover:shadow-[#82b2df]/50 hover:scale-105
             focus:outline-none focus:ring-4 focus:ring-[#82b2df]/50"
         >
           Get Started
